@@ -1,11 +1,10 @@
-module github.com/Joaovitor1998/language-social-auth
+module github.com/Joaovitor1998/go-oauth
 
 go 1.24.3
 
 require (
-	github.com/golang-jwt/jwt/v5 v5.2.2
+	github.com/Joaovitor1998/go-logger v0.0.0-20250612173557-856e9cf092a7
 	github.com/joho/godotenv v1.5.1
-	golang.org/x/crypto v0.38.0
 	golang.org/x/oauth2 v0.30.0
 )
 
