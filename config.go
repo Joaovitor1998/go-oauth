@@ -1,4 +1,4 @@
-package config
+package oauth
 
 import (
 	"net/http"
@@ -8,7 +8,7 @@ import (
 
 type OAuthConfig interface {
 	InitiateLogin(w http.ResponseWriter, r *http.Request)
-	Callback(w http.ResponseWriter, r *http.Request)
+	Callback(next http.Handler) http.Handler
 }
 
 type OAuthCodeURLConfig struct {
